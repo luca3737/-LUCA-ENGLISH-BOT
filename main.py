@@ -119,6 +119,5 @@ async def on_message(message):
             await message.channel.send(
                 "`풀고 있는 문제가 없습니다, 만약 문제를 풀고 싶으시다면 채널 채팅창에 '!영어 단어'를 입력해주세요.`")
 
-access_token = os.environ["BOT_TOKEN"}
-client.run(
-    access_token)
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
