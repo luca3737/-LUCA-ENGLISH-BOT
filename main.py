@@ -4,6 +4,7 @@ from http import client
 from multiprocessing.connection import answer_challenge
 import random
 import discord
+import os
 
 client = discord.Client()
 
@@ -118,5 +119,6 @@ async def on_message(message):
             await message.channel.send(
                 "`풀고 있는 문제가 없습니다, 만약 문제를 풀고 싶으시다면 채널 채팅창에 '!영어 단어'를 입력해주세요.`")
 
+access_token = os.environ["BOT_TOKEN"}
 client.run(
-    "OTkzNzc2Njg5NTYzODMyMzQx.GF7l8_.U_6RveTbV_NgShSeeRhNRj2FB25228bgY4zhQ4")
+    access_token)
